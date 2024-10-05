@@ -1,0 +1,540 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Codex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/planet-high-resolution-logo-transparent1.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+         <div class="screen">
+            <div class="txt">
+                <h3 class="text-white h2">we are going to quick journey to space</h3>
+                <h2 class="text-white h2">sit tight!</h2>
+            </div>
+            <div class="rocket">
+                <img src="img/—Pngtree—flying rocket_3718748.png" class="rocketImg">
+            </div>
+        </div> 
+
+    <div class="continer-fluid top">
+        <header class="mynavbar">
+            <div class="header-content">
+                <p class="header-logo">Cosmic<span>Codex</span></p>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="list nav-active" onclick ="handleClick(this)">home</a></li>
+                        <li><a href="#planets" class="list" onclick ="handleClick(this)">Planets</a></li>
+                        <li><a href="#Orrery" class="list" onclick ="handleClick(this)">Orrery</a></li>
+                        <li><a href="#NEO" class="list" onclick ="handleClick(this)">NEO</a></li>
+                        <li><a href="#Game" class="list" onclick ="handleClick(this)">game</a></li>
+                        <li><a class="btn-style" href="#join">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="video">
+            <video autoplay loop  muted plays-inline class="back-video">
+                <source src="img/earth-bg.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <main class="overlay">
+                <div class="title-content">
+                    <!-- <h1>PLANET</h1> -->
+                    <h2 class="title-h2">EARTH</h2>
+                    <hr>
+                    <p class="title-text">
+                        Earth is a special planet where we all live, full of beautiful places like forests, oceans, and mountains. It's our job to take care of it so all living things can be happy and healthy!</p>
+                </div>
+        </main>
+    </div>
+
+    <div class="solar" id="planets">
+        <h1 class="display-4 ">Our solar system</h1>
+        <div class="lft-clmn">
+            <div class="left">  
+                <div class="sun planet mt-1">
+                    <img src="img/Sun.png" alt="">
+                </div>
+    
+                <div class="mercury-txt txt">
+                    <p>
+                        Diameter: 4,879 km
+                        Mass: 0.33 × 10²⁴ kg
+                        Distance from Sun: 57.9 million km
+                        Gravity: 3.7 m/s²
+                        Features: Mercury is the smallest planet with an extremely thin atmosphere. Its surface resembles that of Earth's Moon, and temperatures can swing from extremely hot to extremely cold due to the lack of atmosphere
+                    </p>
+                </div>
+    
+                <div class="venus planet">
+                    <img src="img/venus-unscreen.gif" alt="">
+                </div>
+    
+                <div class="earth-txt txt">
+                    <p>
+                        Diameter: 12,756 km
+                        Mass: 5.97 × 10²⁴ kg
+                        Distance from Sun: 149.6 million km
+                        Gravity: 9.8 m/s²
+                        Features: Earth is the only planet known to support life, with a balanced atmosphere of nitrogen and oxygen, liquid water, and a stable climate conducive to life
+                    </p>
+                </div>
+            </div>
+            <div class="left ">
+                <div class="moon planet mt-5">
+                    <img src="img/Moon.png" alt="">
+                </div>
+    
+                <div class="mars-txt txt">
+                    <p>
+                        Diameter: 6,792 km
+                        Mass: 0.64 × 10²⁴ kg
+                        Distance from Sun: 228 million km
+                        Gravity: 3.7 m/s²
+                        Features: Mars has a thin atmosphere mostly of carbon dioxide, surface conditions with the potential for ancient water flow, and features like canyons and volcanoes. It’s often targeted for future human exploration
+                    </p>
+                </div>
+    
+                <div class="juiter planet">
+                    <img src="img/jupiter-unscreen.gif" alt="">
+                </div>
+    
+                <div class="saturn-txt txt">
+                    <p>
+                        Diameter: 120,536 km
+                        Mass: 568 × 10²⁴ kg
+                        Distance from Sun: 1.43 billion km
+                        Gravity: 9.0 m/s²
+                        Features: Saturn is famous for its extensive ring system made of ice and rock. Like Jupiter, it is a gas giant with many moons, including Titan, which has a thick atmosphere
+                    </p>
+                </div>
+            </div>
+            <div class="left last mt-4">
+                <div class="uranus planet mt-5">
+                    <img src="img/Uranus.png" alt="">
+                </div>
+    
+                <div class="neptune-txt txt">
+                    <p>
+                        Diameter: 49,528 km
+                        Mass: 102 × 10²⁴ kg
+                        Distance from Sun: 4.5 billion km
+                        Gravity: 11.0 m/s²
+                        Features: Neptune, also an ice giant, has strong winds and storms. It has a deep blue color and at least 16 moons. Its largest moon, Triton, is believed to be a captured dwarf planet
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-clmn">
+            <div class="right ">
+                <div class="sun-txt txt mt-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam illo soluta, optio minus laborum tenetur sequi maxime, nisi est exercitationem repellendus dolore cum magni amet fugit sunt voluptatibus possimus.
+                    </p>   
+                </div>
+    
+                <div class="mercury planet">
+                    <img src="img/mercury-unscreen.gif" alt="">
+                </div>
+    
+                <div class="venus-txt txt mt-3">
+                    <p>
+                        Diameter: 12,104 km
+                        Mass: 4.87 × 10²⁴ kg
+                        Distance from Sun: 108.2 million km
+                        Gravity: 8.9 m/s²
+                        Features: Venus has a thick, toxic atmosphere rich in carbon dioxide, causing a runaway greenhouse effect. Surface temperatures can exceed 460°C, making it the hottest planet
+                    </p>
+                </div>
+    
+                <div class="earth planet d-flex justify-content-center align-items-center">
+                    <img src="img/earth-unscreen.gif" alt="">
+                </div>
+            </div>
+            <div class="right ">
+                <div class="moon-txt txt mt-5">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi maiores pariatur distinctio dignissimos, voluptas amet ipsa sequi quam at laudantium consequuntur modi accusamus eum nostrum, fugit rem, sed nemo.
+                    </p>   
+                </div>
+    
+                <div class="mars planet">
+                    <img src="img/mars-unscreen.gif" alt="">
+                </div>
+    
+                <div class="jupiter-txt txt mt-5">
+                    <p>
+                        Diameter: 142,984 km
+                        Mass: 1,898 × 10²⁴ kg
+                        Distance from Sun: 778.5 million km
+                        Gravity: 23.1 m/s²
+                        Features: Jupiter is the largest planet, primarily composed of hydrogen and helium. It has a strong magnetic field, at least 95 moons, and a famous storm known as the Great Red Spot
+                    </p>
+                </div>
+    
+                <div class="saturn planet">
+                    <img src="img/saturn-unscreen.gif" alt="">
+                </div>
+            </div>
+            <div class="right last my-5">
+                <div class="uranus-txt txt mt-5">
+                    <p>
+                        Diameter: 51,118 km
+                        Mass: 86.8 × 10²⁴ kg
+                        Distance from Sun: 2.87 billion km
+                        Gravity: 8.7 m/s²
+                        Features: Uranus is an ice giant with a cold atmosphere of hydrogen, helium, and methane, which gives it a blue color. It rotates on its side, causing extreme seasonal variations
+                    </p>   
+                </div>
+    
+                <div class="neptune planet">
+                    <img src="img/Neptune.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <h1 class="display-4 fw-bold text-white text-center Orrery-txt m-0">Our Orrery model</h1>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
+    <spline-viewer id="Orrery" hint loading-anim-type="spinner-big-light" url="https://prod.spline.design/Ya8dIJYcDLzOLoRo/scene.splinecode"></spline-viewer>
+
+    <div class="slider text-center my-5" id="NEO">
+        <h1 class="h1">near earth objects</h1>
+        <p>NEO whose orbit perihelion less than 1.3 AU </p>
+        <div class="wrapper">
+            <i id="left" class="fa-solid  fas fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card createBtn" data-header="Eros" data-content="Asteroid Eros is a near-Earth object discovered in 1898, orbiting the Sun at an average distance of about 1.5 astronomical units from Earth. 
+                This S-type asteroid is primarily composed of silicate minerals, including olivine and pyroxene, along with metallic elements like iron and nickel. Eros measures approximately 16.8 kilometers in length. Although it is classified as a potentially hazardous asteroid, its current orbit does not pose a significant threat to Earth.
+                The minerals found in Eros offer potential benefits for future space missions. The iron and nickel could be used for construction materials in space, while silicate minerals may be useful for producing oxygen and water through in-situ resource utilization. This could facilitate long-term human presence in space and support exploration missions to Mars and beyond.">
+                        <img src="img/Eros.jpg" alt="" draggable="false">
+                    <h2>
+                        Eros
+                    </h2>
+                </li> 
+                <li class="card createBtn" data-header="Albert" data-content="Asteroid Albert is a near-Earth object discovered in 1971, orbiting the Sun at an average distance of approximately 1.5 astronomical units from Earth. Classified as an S-type asteroid, it primarily consists of silicate minerals, including olivine and pyroxene, along with metallic elements such as iron and nickel. Albert measures about 4.2 kilometers in diameter. While it is categorized as a potentially hazardous asteroid, its current trajectory does not present a significant threat to Earth.
+
+                Asteroid Albert’s composition offers various potential applications for future space exploration. The iron and nickel could be used to produce construction materials for habitats or spacecraft. Additionally, the silicate minerals can be utilized to generate oxygen for breathing and water for hydration through chemical processes. Other minerals found in Albert may be processed for rare elements, which can be essential for electronics and renewable energy technologies. By harnessing these resources, we can support sustained human presence in space and pave the way for further exploration of the solar system.">
+                        <img src="img/Albert.jpg" alt="">
+                    <h2>Albert</h2>
+                </li>
+                <li class="card createBtn" data-header="Alinda" data-content="Asteroid Linda is a fascinating near-Earth object discovered in 1976, with an orbit that brings it close to our planet. It is classified as a C-type asteroid, which indicates a composition rich in carbonaceous materials and primitive solar system building blocks. Linda has a diameter of approximately 5.7 kilometers, making it a significant body for study within the context of planetary formation.
+
+                The carbon-rich materials in Asteroid Linda have immense potential for scientific research and practical applications. The presence of organic compounds could provide insights into the origins of life on Earth, offering clues about the building blocks necessary for biological processes. Additionally, the asteroid’s minerals could be used for extracting water, which is vital for sustaining human life in space. This water could be converted into hydrogen and oxygen for rocket fuel, enabling deeper space missions.
+                
+                Moreover, the metals found in Linda, such as nickel and iron, could be harnessed for manufacturing spacecraft components or infrastructure for future lunar and Martian bases. By exploring and utilizing the resources of Asteroid Linda, we can unlock new possibilities for human exploration and settlement beyond Earth, making it an essential target for future missions in the ongoing quest for knowledge and expansion in our solar system.">
+                    <img src="img/honda.jpg"alt="" draggable="false">
+                    <h2>Alinda</h2>
+                </li>
+                <li class="card createBtn" data-header="Janymed" data-content="Janymede is the largest moon of Jupiter and the most massive moon in our solar system, discovered in 1610 by Galileo Galilei. With a diameter of approximately 5,268 kilometers, Janymede is even larger than the planet Mercury. Its unique composition primarily includes water ice, silicate rock, and a metallic core, leading to a complex geological history.
+
+                The presence of water ice on Janymede suggests the possibility of a subsurface ocean beneath its icy crust, which could harbor conditions suitable for life. This has sparked significant interest in astrobiology, as studying Janymede could provide insights into the potential for life beyond Earth. The moon’s surface features a mix of dark, heavily cratered regions and bright, younger areas with grooved terrain, indicating geological activity in the past.
+                
+                Janymede orbits Jupiter at an average distance of about 1,070,000 kilometers. Despite being part of a turbulent environment due to Jupiter’s intense radiation and gravitational influence, Janymede is not classified as a threat to Earth. Instead, it represents a key target for future exploration missions aimed at understanding its geology and potential habitability.
+                
+                The minerals found on Janymede, such as water ice and silicates, could also have practical applications for future space missions. Water extracted from its surface could be used for life support, as well as for generating hydrogen and oxygen for fuel. Additionally, the geological materials present on Janymede may serve as resources for constructing habitats or equipment in potential future missions to the outer solar system. By studying Janymede, we not only explore the mysteries of our solar system but also lay the groundwork for sustainable human presence beyond Earth.
+                ">
+                    <img src="img/Ganymed.jpg" alt="" draggable="false"> 
+                    <h2>Janymed</h2>
+                </li>
+                <li class="card createBtn" data-header="Amor" data-content="Asteroid Amor is a significant near-Earth object discovered in 1932. It belongs to a group of asteroids that are characterized by their orbits that do not cross Earth’s path but come relatively close. Amor has a diameter of approximately 1.1 kilometers and is primarily composed of silicate materials, making it an S-type asteroid.
+
+                The composition of Asteroid Amor includes minerals like olivine and pyroxene, which are rich in iron and magnesium. These materials not only provide insights into the early solar system’s formation but also have practical applications for future space exploration. The iron and nickel could be utilized for constructing habitats or spacecraft, while silicate minerals could be used to produce oxygen and water through chemical processes.
+                
+                Amor orbits the Sun at an average distance of about 1.6 astronomical units from Earth. Although it is classified as a potentially hazardous asteroid, its current orbit does not pose a significant threat to our planet. Continued monitoring of its trajectory allows scientists to better understand the dynamics of near-Earth objects and develop potential strategies for planetary defense.
+                
+                The exploration and potential utilization of Asteroid Amor’s resources could support future missions to Mars and beyond. For example, extracting water from its surface could provide essential resources for life support and fuel production, enabling deeper space exploration. By investigating Amor, scientists can unlock valuable information about the solar system’s history and contribute to the advancement of sustainable human presence in space.
+                ">
+                    <img src="img/Amor.jpg" alt="" draggable="false"> 
+                    <h2>Amor</h2>
+                </li>
+                <li class="card createBtn" data-header="Icarus (HAZARDOUS)" data-content="Asteroid Icarus is a notable near-Earth object discovered in 1949, named after the figure from Greek mythology who famously flew too close to the sun. With a diameter of approximately 1.1 kilometers, Icarus is classified as an Apollo-type asteroid, which means its orbit intersects that of Earth’s. Its close approach to our planet makes it a subject of significant interest for astronomers and planetary scientists.
+
+                The composition of Asteroid Icarus primarily includes silicate minerals, such as olivine and pyroxene, along with metals like iron and nickel. These materials provide valuable insights into the formation of the solar system and the processes that shaped its early bodies. Additionally, the iron and nickel found in Icarus could have practical applications in future space missions, serving as resources for building spacecraft and habitats.
+                
+                Icarus orbits the Sun at an average distance of about 1.0 astronomical units, coming close to Earth approximately every 19 months. Although classified as a potentially hazardous asteroid due to its proximity to our planet, current observations indicate that it poses no significant threat to Earth in the foreseeable future. Continuous monitoring of its trajectory is essential for planetary defense efforts.
+                
+                The minerals found on Icarus also hold promise for future space exploration. The extraction of water and metals from the asteroid could support life support systems and fuel production for deeper space missions. By studying Icarus, scientists not only learn about the dynamics of near-Earth objects but also explore the potential for utilizing asteroid resources to enhance human presence in space.
+                ">
+                        <img src="img/Icarus.jpg" alt="" draggable="false"> 
+                    <h2>Icarus</h2>
+                </li>
+                <li class="card createBtn" data-header="Betulia" data-content="Asteroid Betulia is a relatively small near-Earth object discovered in 1927. With a diameter of approximately 3.5 kilometers, Betulia belongs to the category of S-type asteroids, which are primarily composed of silicate minerals and metallic elements. Its composition provides valuable insights into the materials that make up the early solar system.
+
+                The mineralogy of Asteroid Betulia includes silicate minerals such as olivine and pyroxene, alongside metals like iron and nickel. These components not only help scientists understand the processes that shaped asteroids but also have practical applications for future space missions. The metals found in Betulia could be utilized in constructing spacecraft or habitats, while silicate materials may be useful for producing oxygen and water through various chemical processes.
+                
+                Betulia orbits the Sun at an average distance of approximately 1.4 astronomical units from Earth. Although classified as a potentially hazardous asteroid due to its close approaches to our planet, its current orbit does not pose a significant threat to Earth. Continuous monitoring of its trajectory helps scientists assess any future risks.
+                
+                The potential resources available on Betulia could play a crucial role in supporting human exploration of the solar system. For instance, extracting water from its surface could provide essential resources for life support and fuel production. By studying Betulia, scientists can unlock valuable knowledge about asteroids and contribute to the development of sustainable technologies for future missions beyond Earth, enhancing humanity’s ability to explore and utilize space.
+                ">
+                        <img src="img/Betulia.jpg" alt="" draggable="false"> 
+                    <h2>Betulia</h2>
+                </li>
+                <li class="card createBtn" data-header="Geographos (HAZARDOUS)" data-content="Asteroid Geographos is an intriguing near-Earth object discovered in 1951. It measures approximately 5.2 kilometers in diameter and is classified as an S-type asteroid, indicating that it is primarily composed of silicate minerals and metallic elements. Geographos has a unique elongated shape, resembling a peanut, which is uncommon among asteroids and suggests a complex geological history.
+
+                The mineral composition of Asteroid Geographos includes silicates like olivine and pyroxene, as well as metals such as iron and nickel. These materials offer significant insights into the processes that formed the solar system’s rocky bodies. The iron and nickel can potentially be used for constructing spacecraft and habitats, while the silicate minerals may be utilized to produce oxygen and water, essential for future human missions.
+                
+                Geographos orbits the Sun at an average distance of about 1.3 astronomical units from Earth, coming relatively close to our planet during its approach. Although it is classified as a potentially hazardous asteroid due to its close encounters with Earth, its current trajectory does not pose a significant risk. Ongoing monitoring of its orbit is crucial for understanding the dynamics of near-Earth objects and developing planetary defense strategies.
+                
+                The exploration of Geographos could provide valuable resources for future space missions. Extracting water and minerals from its surface could support life support systems and fuel production for deeper space exploration. By studying Geographos, scientists can enhance our understanding of asteroid characteristics and contribute to the advancement of sustainable human presence in space, making it an essential target for future exploration efforts.
+                ">
+                        <img src="img/Geographos.jpg" alt="" draggable="false"> 
+                    <h2>Geographos</h2>
+                </li>
+                <li class="card createBtn" data-header="Ivar" data-content="Asteroid Ivar is a relatively small near-Earth object discovered in 1980. It measures approximately 4.1 kilometers in diameter and is classified as an S-type asteroid, which indicates that it is primarily composed of silicate materials and metallic elements. The unique characteristics of Ivar make it a subject of interest for astronomers and planetary scientists.
+
+                The mineral composition of Asteroid Ivar includes silicate minerals such as olivine and pyroxene, along with metals like iron and nickel. These components provide crucial insights into the processes that shaped the early solar system and the formation of rocky bodies. The presence of iron and nickel in Ivar can be particularly beneficial for future space missions, as these metals could be utilized for constructing spacecraft and habitats.
+                
+                Ivar orbits the Sun at an average distance of about 1.5 astronomical units from Earth, with its path bringing it relatively close to our planet during certain approaches. While classified as a potentially hazardous asteroid due to its proximity to Earth, current assessments indicate that it poses no significant threat in the near future. Ongoing monitoring of its trajectory is important for understanding the dynamics of near-Earth objects.
+                
+                The resources available on Asteroid Ivar could play a vital role in supporting future human exploration of the solar system. For example, extracting water from its surface could provide essential resources for life support and fuel production. By studying Ivar, scientists can gain valuable knowledge about asteroids, paving the way for advancements in technology and sustainable practices for future missions beyond Earth.
+                ">
+                        <img src="img/Ivar.jpg" alt="" draggable="false"> 
+                    <h2>Ivar</h2>
+                </li>
+                <li class="card createBtn" data-header="Toro" data-content="Asteroid Toro is a noteworthy near-Earth object that was discovered in 1984. It has an approximate diameter of 1.5 kilometers and is classified as an S-type asteroid, which suggests that it is primarily composed of silicate minerals and metallic elements. Its composition and characteristics make it an interesting target for scientific research and exploration.
+
+                The mineral makeup of Asteroid Toro includes silicate minerals such as olivine and pyroxene, as well as metals like iron and nickel. These materials can provide valuable insights into the processes that shaped the early solar system and the formation of rocky bodies. The iron and nickel found in Toro could have practical applications for future space missions, potentially serving as resources for constructing spacecraft, habitats, and other necessary infrastructure.
+                
+                Toro orbits the Sun at an average distance of approximately 1.2 astronomical units from Earth, bringing it into close proximity to our planet during certain points in its orbit. Although it is classified as a potentially hazardous asteroid due to its proximity to Earth, current observations suggest that it poses no significant threat in the foreseeable future. Continuous monitoring of its trajectory is essential for understanding the dynamics of near-Earth objects and developing effective planetary defense strategies.
+                
+                The exploration of Asteroid Toro could unlock resources that are vital for future human exploration of the solar system. For instance, water extracted from its surface could support life support systems and fuel production for deep space missions. By studying Toro, scientists can enhance our understanding of asteroids and contribute to the development of sustainable technologies for future space endeavors, making it an essential target for ongoing exploration efforts.">
+                        <img src="img/Toro.jpg" alt="" draggable="false"> 
+                    <h2>Toro</h2>
+                </li>
+                <li class="card createBtn" data-header="Daedalus" data-content="Asteroid Daedalus is an intriguing near-Earth object discovered in 1986. With a diameter of approximately 1.8 kilometers, Daedalus is classified as an S-type asteroid, indicating that it is primarily composed of silicate minerals and metallic elements. Its name is derived from the mythical Greek craftsman and inventor, Daedalus, known for his ingenuity and skill.
+
+                The mineral composition of Asteroid Daedalus includes silicate minerals such as olivine and pyroxene, along with metals like iron and nickel. These materials not only provide insights into the early solar system’s formation but also hold potential for practical applications in future space exploration. The iron and nickel could be utilized for constructing spacecraft and habitats, while silicate minerals might be processed to produce oxygen and water through various chemical reactions.
+                
+                Daedalus orbits the Sun at an average distance of about 1.3 astronomical units from Earth, coming relatively close to our planet during certain approaches. Although it is classified as a potentially hazardous asteroid due to its proximity to Earth, current data suggests that it poses no significant threat in the near term. Ongoing monitoring of its trajectory is vital for assessing any future risks associated with near-Earth objects.
+                
+                The exploration of Asteroid Daedalus could yield valuable resources for human missions beyond Earth. Extracting water from its surface could provide essential supplies for life support and fuel production, enabling deeper space exploration. By studying Daedalus, scientists can enhance our understanding of asteroid composition and contribute to the development of sustainable technologies for future exploration efforts, positioning it as a key target for upcoming missions in our ongoing journey into space.">
+                        <img src="img/Deadalus.jpg" alt="" draggable="false"> 
+                    <h2>Daedalus</h2>
+                </li>
+                <li class="card createBtn" data-header="Sisyphus" data-content="Asteroid Sisyphus is a fascinating near-Earth object discovered in 1983. It has a diameter of approximately 3.2 kilometers and is classified as an S-type asteroid, indicating that it is primarily composed of silicate minerals and metallic elements. Named after the mythological figure Sisyphus, who was condemned to roll a boulder uphill for eternity, the asteroid’s characteristics evoke thoughts about the challenges of space exploration.
+
+                The mineral composition of Asteroid Sisyphus includes silicate minerals such as olivine and pyroxene, alongside metals like iron and nickel. These components not only provide insights into the processes that formed the solar system but also have practical applications for future space missions. The metals found in Sisyphus could be used for constructing spacecraft and habitats, while the silicate materials may be harnessed to produce oxygen and water, crucial for supporting human life in space.
+                
+                Sisyphus orbits the Sun at an average distance of about 1.4 astronomical units from Earth, making it a close neighbor during certain periods of its orbit. While it is classified as a potentially hazardous asteroid due to its proximity to Earth, current observations indicate that it does not pose a significant threat in the near future. Continuous monitoring of its trajectory is essential for understanding the dynamics of near-Earth objects and developing effective planetary defense strategies.
+                
+                The exploration of Asteroid Sisyphus could uncover valuable resources for future space endeavors. Extracting water from its surface could provide essential resources for life support and fuel production for deep space missions. By studying Sisyphus, scientists can enhance our understanding of asteroid characteristics and contribute to the development of sustainable technologies for future exploration, making it a significant target for ongoing missions in the quest for knowledge and advancement in space.">
+                        <img src="img/Sisyphus.jpg" alt="" draggable="false" data-header="Sisyphus "> 
+                    <h2>Sisyphus</h2>
+                </li>
+                <li class="card createBtn" data-header="Quetzalcoatl" data-content="Asteroid Quetzalcoatl is a notable near-Earth object discovered in 1985. Named after the feathered serpent deity from Mesoamerican mythology, this asteroid has a diameter of approximately 1.1 kilometers and is classified as an S-type asteroid. This classification indicates that it is primarily composed of silicate minerals and metallic elements, making it a significant subject for study within planetary science.
+
+                The mineral composition of Asteroid Quetzalcoatl includes silicate minerals such as olivine and pyroxene, along with metals like iron and nickel. These materials provide valuable insights into the processes that shaped the early solar system. The presence of iron and nickel can be particularly beneficial for future space missions, as these metals could be utilized in constructing spacecraft, habitats, and other necessary infrastructure for human exploration.
+                
+                Quetzalcoatl orbits the Sun at an average distance of approximately 1.5 astronomical units from Earth, coming close during certain points in its orbit. Although it is classified as a potentially hazardous asteroid due to its proximity to Earth, current assessments suggest that it poses no significant threat in the foreseeable future. Continuous monitoring of its trajectory is essential for understanding the dynamics of near-Earth objects and developing planetary defense strategies.
+                
+                The exploration of Asteroid Quetzalcoatl could unlock resources that are vital for supporting future human exploration of the solar system. For example, extracting water from its surface could provide essential resources for life support and fuel production. Additionally, the minerals found on Quetzalcoatl may serve as valuable materials for construction and manufacturing in space. By studying Quetzalcoatl, scientists can enhance our understanding of asteroids and contribute to the advancement of sustainable technologies for future missions beyond Earth, making it an essential target for ongoing exploration efforts.">
+                        <img src="img/Quetzalcoatl.jpg" alt="" draggable="false"> 
+                    <h2>Quetzalcoatl</h2>
+                </li>
+                <li class="card createBtn" data-header="Boreas" data-content="Asteroid Boreas is an intriguing near-Earth object that was discovered in 1981. It measures approximately 2.5 kilometers in diameter and is classified as an S-type asteroid, indicating that it primarily consists of silicate minerals and metallic elements. The asteroid is named after Boreas, the Greek god of the north wind, reflecting its connection to atmospheric and celestial phenomena.
+
+                The mineral composition of Asteroid Boreas includes silicate minerals such as olivine and pyroxene, as well as metals like iron and nickel. These components provide valuable insights into the formation and evolution of the solar system’s rocky bodies. The presence of iron and nickel makes Boreas a potential source of materials that could be utilized in future space missions, including the construction of spacecraft and habitats.
+                
+                Boreas orbits the Sun at an average distance of about 1.5 astronomical units from Earth, bringing it relatively close during specific approaches. While classified as a potentially hazardous asteroid due to its proximity to Earth, current evaluations indicate that it poses no significant threat in the near term. Continuous monitoring of its trajectory is essential for understanding the dynamics of near-Earth objects and developing strategies for planetary defense.
+                
+                The exploration of Asteroid Boreas could yield valuable resources for human exploration beyond Earth. For instance, extracting water from its surface could provide essential resources for life support and fuel production. Additionally, the minerals found on Boreas may be processed to produce materials for construction and manufacturing in space. By studying Boreas, scientists can enhance our understanding of asteroids and contribute to the development of sustainable technologies for future missions, making it an important target for ongoing exploration efforts.
+                ">
+                        <img src="img/Boreas.jpg" alt="" draggable="false"> 
+                    <h2>Boreas</h2>
+                </li>
+                <li class="card createBtn" data-header="Cuyo" data-content="Asteroid Cuyo is a relatively small near-Earth object that was discovered in 1990. It has an approximate diameter of about 1.7 kilometers and is classified as an S-type asteroid, indicating that it primarily consists of silicate materials and metallic elements. Named after the region in Argentina, Cuyo represents an intriguing target for scientists interested in studying asteroids and their properties.
+
+                The mineral composition of Asteroid Cuyo includes silicate minerals such as olivine and pyroxene, as well as metals like iron and nickel. These components are significant for understanding the processes that shaped the early solar system and the formation of rocky bodies. The presence of iron and nickel in Cuyo could have practical applications for future space exploration, as these metals could be used in constructing spacecraft and habitats.
+                
+                Cuyo orbits the Sun at an average distance of approximately 1.4 astronomical units from Earth. While classified as a potentially hazardous asteroid due to its close approaches to Earth, current assessments suggest that it poses no immediate threat in the foreseeable future. Ongoing monitoring of its trajectory is essential for understanding the dynamics of near-Earth objects and developing effective planetary defense strategies.
+                
+                Exploration of Asteroid Cuyo could provide valuable resources for supporting future human missions to the Moon, Mars, and beyond. For example, extracting water from its surface could be vital for life support systems and fuel production for deep space missions. By studying Cuyo, scientists can enhance our understanding of asteroids and contribute to the advancement of sustainable technologies for future exploration efforts, making it an important target for ongoing missions in the quest for knowledge and exploration in our solar system.">
+                        <img src="img/Cuyo.jpg" alt="" draggable="false"> 
+                    <h2>Cuyo</h2>
+                </li>
+                <li class="card createBtn" data-header="Anteros" data-content="Asteroid Anterous is a noteworthy near-Earth object discovered in 1983. It has an approximate diameter of 1.3 kilometers and is classified as an S-type asteroid, which means it is primarily composed of silicate minerals and metallic elements. The asteroid is named after a lesser-known figure from Greek mythology, making it an interesting subject for study within the context of celestial objects.
+
+                The mineral composition of Asteroid Anterous includes silicate minerals such as olivine and pyroxene, along with metals like iron and nickel. These materials provide valuable insights into the processes that shaped the early solar system and the formation of rocky bodies. The presence of iron and nickel in Anterous makes it a potential source of materials that could be utilized for future space exploration, particularly in constructing spacecraft and habitats.
+                
+                Anterous orbits the Sun at an average distance of about 1.6 astronomical units from Earth, coming relatively close to our planet during specific points in its orbit. While classified as a potentially hazardous asteroid due to its proximity, current assessments indicate that it does not pose a significant threat in the foreseeable future. Continuous monitoring of its trajectory is essential for understanding the dynamics of near-Earth objects and developing planetary defense strategies.
+                
+                The exploration of Asteroid Anterous could unlock resources that are vital for supporting future human missions beyond Earth. For instance, extracting water from its surface could provide essential resources for life support and fuel production. Additionally, the minerals found on Anterous may be useful in manufacturing and construction for space missions. By studying Anterous, scientists can enhance our understanding of asteroids and contribute to the development of sustainable technologies for future exploration, making it an important target for ongoing missions in our quest to explore the solar system.">
+                        <img src="img/Anteros.jpg" alt="" draggable="false"> 
+                    <h2>Anteros</h2>
+                </li>
+                <li class="card  createBtn" data-header="Tezcotliopoca" data-content="Asteroid Tezcatlipoca is a fascinating near-Earth object named after the Aztec god of the night sky and sorcery. Discovered in 1986, Tezcatlipoca has an estimated diameter of about 1.6 kilometers and is classified as an S-type asteroid. This classification indicates that it primarily consists of silicate materials and metallic elements, making it an interesting subject for scientific study.
+
+                The mineral composition of Asteroid Tezcatlipoca includes silicate minerals such as olivine and pyroxene, along with metals like iron and nickel. These materials are significant for understanding the formation and evolution of the solar system’s rocky bodies. The presence of iron and nickel could have practical applications for future space missions, potentially serving as resources for constructing spacecraft and habitats.
+                
+                Tezcatlipoca orbits the Sun at an average distance of approximately 1.4 astronomical units from Earth. While it is classified as a potentially hazardous asteroid due to its close approaches to our planet, current observations indicate that it poses no significant threat in the near term. Continuous monitoring of its trajectory is essential for understanding the dynamics of near-Earth objects and developing effective planetary defense strategies.
+                
+                Exploration of Asteroid Tezcatlipoca could reveal valuable resources for supporting future human exploration beyond Earth. For example, extracting water from its surface could provide essential supplies for life support and fuel production. Additionally, the minerals found on Tezcatlipoca may be utilized in manufacturing and construction for space missions. By studying Tezcatlipoca, scientists can enhance our understanding of asteroids and contribute to the development of sustainable technologies for future exploration, making it a significant target for ongoing missions in the quest for knowledge and advancement in space exploration.
+                ">
+                        <img src="img/Tezcotliopoca.jpg" alt="" draggable="false"> 
+                    <h2>Tezcotliopoca</h2>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fas fa-angle-right"></i>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="customDiv">
+        
+        </div>
+    </div>
+
+    <div class="container-fluid border border-2 border bg-secondary-subtle d-flex justify-content-between my-5" id="Game">
+        <iframe src="https://scratch.mit.edu/projects/1077002812/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+        <div class="guidelines border border-1 border-black bg-white w-50 p-2 d-flex flex-column justify-content-between align-self-center">
+            <h2 class="h2 text-center">Let's test your memory</h2>
+            <p>
+                <ul>
+                    <li>press "Green flag" to start Game!</li>
+                    <li>"Space" to shoot</li>
+                    <li>"up Arrow" to move up</li>
+                    <li>"down Arrow" to move down</li>
+                    <li>Destroying HAZARDOUS asteroids increases score</li>
+                    <li>Destroying Non-HAZARDOUS asteroids decreases score</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="team container-fluid border border-2 my-5">
+        <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+              <div class="max-w-2xl">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our team</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Our team is a diverse group of passionate professionals, united by a commitment to innovation, excellence, and delivering impactful results.
+                    Together, we bring dedication, experience, and a shared vision to everything we do..</p>
+              </div>
+              <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-25 w-20 rounded-full" src="img/IMG-20240927-WA0153.jpg" alt="">
+                    <div>
+                      <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Layla Magdy</h3>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-25 w-20 rounded-full" src="img/IMG-20240927-WA0155.jpg" alt="">
+                    <div>
+                      <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Fatima Hossam</h3>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-25 w-20 rounded-full" src="img/IMG_20240501_023346_848.jpg" alt="">
+                    <div>
+                      <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Nourhan Ashraf</h3>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-25 w-20 rounded-full" src="img/SAVE_20240927_213016.jpg" alt="">
+                    <div>
+                      <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Sherry Emil</h3>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-25 w-20 rounded-full" src="img/SAVE_20240927_213021.jpg" alt="">
+                    <div>
+                      <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Fady Alfred</h3>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-25 w-20 rounded-full" src="img/SAVE_20240927_213024.jpg" alt="">
+                    <div>
+                      <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Maria Emil</h3>
+                    </div>
+                  </div>
+                </li>          
+              </ul>
+            </div>
+          </div>
+          
+    </div>
+
+    <div class="newsletter" id="join">
+        <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <div class="max-w-xl lg:max-w-lg">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Join our community.</h2>
+          <p class="mt-4 text-lg leading-8 text-gray-300">What innovative ideas do you have for utilizing asteroid minerals? How can we use AI, robotics, and modern technologies for extraction? Join NASA Space Apps and share your insights!</p>
+          <div class="mt-6 flex max-w-md gap-x-4">
+            <label for="email-address" class="sr-only">Email address</label>
+            <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
+            <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Login </button>
+          </div>
+        </div>
+        <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px; width: 550px;"></textarea>
+                <label for="floatingTextarea2">Comments:</label>
+              </div>
+        </dl>
+      </div>
+    </div>
+    <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+      <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+
+
+    <div class="container-fluid g-0 mt-4">
+        <div class="container g-5">
+            <div class="row g-0">
+                <h2 class="h2 my-4 text-white fw-bold">Resources Used</h2>
+                <ul class="list-group w-100 list-group-horizontal d-flex justify-content-between my-2">
+                    <li class="list-dotted">
+                        <a class="text-white link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://eyes.nasa.gov/apps/asteroids#/home" target="_blank">Nasa eyes on asteroids</a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="text-white link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://neo.ssa.esa.int/">ESA</a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="text-white link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://ssd.jpl.nasa.gov/planets/phys_par.html">Solar system Nasa</a>
+                    </li>
+                    <li class="">
+                        <a class="text-white link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">planetary fact sheet</a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="text-white link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.spacereference.org/">space reference</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

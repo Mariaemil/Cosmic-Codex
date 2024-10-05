@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+}
+.top{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.screen{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg , #070E19 , #181b30 , #070E19);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.rocket{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    bottom: 0;
+    transition: all 900ms;
+    /* transform: translateY(50%); */
+}
+.active{
+    bottom: 50%;
+}
+
+.rocket img{
+    width: 120px;
+    height: 120px;
+}
+.rocket::before{
+    position: absolute;
+    content: '';
+    top: 93%;
+    left: 52.5px;
+    /* transform: translateX(-50%); */
+    height: 0;
+    width: 15px;
+    background: linear-gradient(#F98608 , #FDCF58,transparent);
+    transition:all 2s;
+    animation: none;
+}
+.rocket::after{
+    position: absolute;
+    content: '';
+    top: 90%;
+    left: 52.5px;
+    /* transform: translateX(-50%); */
+    height: 0;
+    width: 15px;
+    background: linear-gradient(red , #FDCF58,transparent);
+    filter: blur(20px);
+    transition: all 2s;
+    animation: none;
+}
+.rocket.active::before{
+    height: 200px;
+    animation: shake 500ms linear infinite forwards;
+}
+.rocket.active::after{
+    height: 250px;
+    animation: shake 500ms linear infinite forwards;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(0.5px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-0.5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.animateScreen{
+    animation: screenUp 500ms ease 3s forwards;
+}
+
+@keyframes screenUp {
+    0%{
+        transform: translateY(0);
+        /* opacity: 1; */
+    }
+    100%{
+        transform: translateY(-100%);
+        /* opacity: 0; */
+    }
+}
+
+.rocketAnimate{
+    animation: rocketAnimate 4s ease 0 forwards ;
+}
+@keyframes rocketAnimate {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-50%);
+    }
+}
+
+.mynavbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    /* padding: 20px 0; */
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid white;
+    z-index: 10;
+}
+.header-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    margin-left: 10px;
+}
+.header-content p{
+    font-weight: bold;
+    color: white;
+}
+.header-content span{
+    color: #369EE3;
+}
+.header-content nav{
+    width: 40%;
+    height: 100%;
+}
+.header-content nav ul{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.header-content nav ul li{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content nav ul li a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: 0.2s;
+}
+
+.header-content nav ul li a:hover {
+    -webkit-text-shadow: 0 0 4px #C5D8EF;
+    text-shadow: 0 0 4px #C5D8EF;
+}
+.btn-style {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 15px;
+    color: black !important;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 10px 3px #C5D8EF;
+    box-shadow: 0px 0px 10px 3px #C5D8EF;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn-style:hover {
+    -webkit-box-shadow: 0px 0px 12px 7px #C5D8EF;
+    box-shadow: 0px 0px 12px 7px #C5D8EF;
+}
+.video{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.video video{
+    width: 100%;
+    height: auto;
+    z-index: -10;
+}
+
+
+.header-content nav ul li a.nav-active::after {
+    content: "";
+    left: 50%;
+    top: calc(100% + 18px);
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #56bfdf;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    z-index: 11;
+  }
+
+.overlay{
+    width: 750px;
+    height: 300px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -60%);
+    backdrop-filter: blur(5px);
+}
+.overlay .title-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 10px 3px #C5D8EF;
+    box-shadow: 0px 0px 10px 3px #369EE3;
+    color: white;
+}
+.overlay .title-content h2{
+    font-size: 130px;
+    font-weight: bold;
+    height: 150px;
+}
+.overlay .title-content hr{
+    width: 185px;
+    height: 2px;
+    border: 2px solid #369EE3;
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background: #369EE3;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25 rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index: 100;
+}
+
+.wrapper i:first-child {
+    left: -20px;
+}
+
+.wrapper i:last-child {
+    right: -20px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 5) - 5px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: auto;
+    list-style: none;
+    background: #000000;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    width: 250px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 500ms;
+}
+.card:hover{
+    transform: translateY(10px);
+}
+.card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    position: absolute;
+    bottom: 10px;
+    background-color: #181b30;
+    color: #369EE3;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card span {
+    color: #6a6d78;
+    font-size: 1.31rem;
+
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+
+    }
+}
+.solar{ 
+    width: 100%;
+    height: 4000px;
+    background: url(img/Untitled\ design.png);    
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.solar h1{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: #fff;
+}
+p{
+    margin-bottom: 0 !important;
+}
+.solar .lft-clmn , .solar .right-clmn{
+    width: 50%;
+    height: 4000px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+.solar .last{
+    height: 1200px !important;
+}
+.solar .neptune-txt , .solar .neptune{
+    margin-bottom: 10px;
+}
+.solar .left{
+    width: 100%;
+    height: 2500px;
+    /* background:linear-gradient(#0000009f,#0000009f), url(img/Galaxy-1.jpg) ; */
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.solar .right{
+    width: 100%;
+    height: 2500px;
+    /* background-color:bisque; */
+    /* background:linear-gradient(#0000009f,#0000009f), url(img/Galaxy-2.jpg) ; */
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.solar img{
+    width: auto;
+    height: 300px;
+}
+.solar .planet{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.solar .txt{
+    width: 80%;
+    height: 300px;
+    /* background-color: #56bfdf; */
+    color: white;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 3px 7px #070E19;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.solar .txt p{
+    width: 80%;
+    text-align: center;
+}
+.solar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+
+/* Left and right column */
+.lft-clmn, .right-clmn {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Vertical line between columns */
+.solar::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    background: linear-gradient(#F98608 , #FDCF58,transparent);
+    transform: rotate(180deg);
+    filter: blur(5px);
+    z-index: 0;
+}
+.solar::after {
+    content: '';
+    background-image: url(img/—Pngtree—flying\ rocket_3718748.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 100px;
+    transform: translateX(-42%) rotate(180deg);
+    height: 100px;
+    z-index: 32;
+}
+.Orrery-txt{
+    background: url(img/galaxy-5.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Making sure the planets and text stay on their respective sides */
+.lft-clmn, .right-clmn {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for planets and their text */
+.planet {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.txt {
+    text-align: center;
+    padding: 10px; 
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .solar {
+        flex-direction: column;
+    }
+    
+    /* Remove vertical line for mobile */
+    .solar::before {
+        content: none;
+    }
+
+    .lft-clmn, .right-clmn {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.customDiv{
+    width: 100%;
+    height: auto;
+    /* padding: 10px; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.dynamic-info {
+    width: 60%;
+    height: auto;
+    background-color: #070E19;
+    color:#C5D8EF;
+    text-align: center;
+    margin-top: 20px;
+    padding: 50px;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition effect */
+}
+
+.dynamic-info.show {
+    opacity: 1; /* Fully visible */
+}
+
+.dynamic-info h2 {
+    margin: 0;
+}
+
+.dynamic-info p {
+    margin: 5px 0 0 0;
+}
+
+.guidelines{
+    height: 300px;
+}
